@@ -228,6 +228,89 @@ nav div button {
 
 /* ? hero-section-end-here */
 
+/* ? child-section-satrt-here */
+
+.child-section {
+    padding: 100px 8%;
+    display: flex;
+    gap: 40px;
+    position: relative;
+}
+
+.single-child {
+    width: 569px;
+    height: 569px;
+    border-radius: 50%;
+}
+
+.child-section .little-tittle {
+    color: #ea512e;
+    font-size: 16px;
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+}
+
+.child-section .tittle {
+    font-size: 40px;
+    color: #1B0238;
+    margin-top: 30px;
+}
+
+.child-section .desc {
+    color: #6b6b84;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.child-section .list-box {
+    display: flex;
+    gap: 24px;
+    margin-top: 20px;
+    padding-right: 50px;
+}
+
+.child-section .list-box button {
+    border: none;
+    background-color: #ea512e;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-weight: 600;
+    margin-right: 5px;
+
+}
+
+.child-section .list-box span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.child-section .list-box .container {
+    width: 50%;
+}
+
+.child-section .read-more {
+    border: none;
+    background-color: #ea512e;
+    color: white;
+    padding: 16px 38px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    z-index: 1000;
+    margin-top: 30px;
+}
+
+.child-section .who-we-are-shape {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 120px;
+    animation: move5 2s infinite linear alternate;
+}
+
+/* ? child-section-end-hare */
 
 /* ? animation-start-here */
 
@@ -267,6 +350,17 @@ nav div button {
 @keyframes move4 {
     0% {
         bottom: 15px;
+    }
+
+    100% {
+        right: 60px;
+    }
+
+}
+
+@keyframes move5 {
+    0% {
+        right: 15px;
     }
 
     100% {
@@ -369,6 +463,74 @@ nav div button {
         padding: 12px 25px;
         font-size: 14px;
 
+
+    }
+
+    .child-section {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .child-inner-section {
+        padding: 0px 16px;
+    }
+
+    .who-we-are-shape {
+        display: none;
+    }
+
+    .child-section .single-child {
+        width: 380px;
+        height: 380px;
+        border-radius: 50%;
+        margin-top: 50px;
+        text-align: center;
+        padding: 15px;
+
+    }
+
+
+    .child-section .little-tittle {
+
+        font-size: 14px;
+
+    }
+
+    .child-section .tittle {
+        font-size: 25px;
+
+        margin-top: 10px;
+    }
+
+    .child-section .desc {
+
+        margin-top: 10px;
+    }
+
+    .child-section .list-box span {
+        font-size: 13px;
+
+    }
+
+    .child-section .list-box button {
+
+        width: 20px;
+        height: 20px;
+
+
+    }
+
+    .child-section .list-box {
+
+        gap: 0px;
+        margin-top: 20px;
+        padding-right: 0px;
+    }
+
+    .child-section .read-more {
+
+        padding: 14px 30px;
+        font-size: 15px;
 
     }
 }
