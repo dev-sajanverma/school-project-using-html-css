@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box !important;
-    font-family: "Roboto", sans-serif; 
+    font-family: "Roboto", sans-serif;
 }
 
 /*? navbar-start-here */
-body{
+/* body {
     overflow-x: hidden !important;
-}
+} */
+
 nav {
     display: flex;
     align-items: center;
@@ -489,7 +490,7 @@ nav div button {
     color: #6b6b84;
     line-height: 1.6;
     margin-top: 15px;
-   
+
     ;
 }
 
@@ -524,7 +525,7 @@ nav div button {
     color: #6b6b84;
     line-height: 1.6;
     margin-top: 15px;
-   
+
 
 }
 
@@ -565,26 +566,116 @@ nav div button {
 .badge-conatiner {
     display: flex;
     flex-direction: column;
-    
+
 }
-.value-1{
+
+.value-1 {
     position: absolute;
     top: 0;
     left: o;
 }
-.value-2{
+
+.value-2 {
     position: absolute;
     bottom: 0;
     left: o;
 }
-.value-3{
+
+.value-3 {
     position: absolute;
     bottom: 0;
     right: 0;
 }
+
 /* ? teacher-section-end-here */
 
+
+
+/* ? meet-teacher-section-start-here */
+.team {
+    padding: 100px 2%;
+    background-color: #FAF7F2;
+}
+
+.team .core {
+    font-size: 20px;
+    color: #ea512e;
+    font-weight: 600;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+}
+
+.team .tittle {
+    font-size: 45px;
+    color: #1B0238;
+    font-weight: 600;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.team .container {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.team .container img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.team .container h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.team .container p {
+    color: #ea512e;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.team .social {
+    position: absolute;
+    bottom: -30%;
+    left: 18%;
+    display: flex;
+    gap: 10px;
+
+}
+
+.team .social button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ea512e;
+    border: none;
+    color: white;
+    font-size: 14px;
+}
+
+.team .container .icon-animation:hover .social {
+    animation: 0.3s linear forwards slide;
+}
+
+/* ? meet-teacher-section-start-here */
+
+
 /* ? animation-start-here */
+
+@keyframes slide {
+    0% {
+        bottom: -30%;
+    }
+
+    100% {
+        bottom: 30%;
+    }
+}
 
 @keyframes move {
     0% {
@@ -823,24 +914,48 @@ nav div button {
     .Popular-Classes h1 {
         font-size: 30px;
     }
-.teacher {
-    padding: 0 4%;
-    flex-direction: column;
-}
-.teacher .teacher-pic img{
-width: 100%;
-}
-  
-.teacher .tittle {
-    font-size: 28px;
-    margin-top: 20px;
-}
+
+    .teacher {
+        padding: 0 4%;
+        flex-direction: column;
+    }
+
+    .teacher .teacher-pic img {
+        width: 100%;
+    }
+
+    .teacher .tittle {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+
     .badge p {
-   font-size: 15px;
-}
-.value-1,.value-2,.value-3{
-    display: none;
-}
+        font-size: 15px;
+    }
+
+    .value-1,
+    .value-2,
+    .value-3 {
+        display: none;
+    }
+
+    .team {
+        margin-top: 30px;
+        padding: 40px 2%;
+    }
+
+    .team .container {
+        flex-direction: column
+    }
+
+    .team .tittle {
+        font-size: 30px;
+        margin-top: 5px;
+
+    }
+    .team .container .social{
+        display: none;
+    }
 }
 
 
