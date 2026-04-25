@@ -1,12 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    box-sizing: border-box !important;
+    font-family: "Roboto", sans-serif; 
 }
 
 /*? navbar-start-here */
-
+body{
+    overflow-x: hidden !important;
+}
 nav {
     display: flex;
     align-items: center;
@@ -429,6 +431,159 @@ nav div button {
 
 /* ? cards-section-end-here */
 
+
+/* ? teacher-section-start-here */
+.teacher {
+    padding: 100px 8%;
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    position: relative;
+}
+
+.teacher .core {
+    color: #ea512e;
+    font-family: "Sacramento", cursive;
+}
+
+.teacher .tittle {
+    font-size: 44px;
+    margin-top: 20px;
+}
+
+.teacher .badge {
+    display: flex;
+    gap: 20px;
+    align-items: start;
+    margin-top: 30px;
+}
+
+.teacher .cirle-one {
+    border: 1px solid #d3f5fe;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.teacher .cirle-one div {
+    background-color: #d3f5fe;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.teacher .badge:hover .cirle-one {
+    border: 1px solid #ea512e;
+}
+
+.teacher .badge:hover .cirle-one div {
+    background-color: #ea512e;
+    color: white;
+}
+
+.badge h4 {
+    font-size: 20px;
+}
+
+.badge p {
+    color: #6b6b84;
+    line-height: 1.6;
+    margin-top: 15px;
+   
+    ;
+}
+
+.teacher .cirle-two {
+    border: 1px solid #fce0ad;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.teacher .cirle-two div {
+    background-color: #fce0ad;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.teacher .badge:hover .cirle-two {
+    border: 1px solid #ea512e;
+}
+
+.teacher .badge:hover .cirle-two div {
+    background-color: #ea512e;
+    color: white;
+}
+
+.badge h4 {
+    font-size: 20px;
+}
+
+.badge p {
+    color: #6b6b84;
+    line-height: 1.6;
+    margin-top: 15px;
+   
+
+}
+
+.teacher .cirle-three {
+    border: 1px solid #fbc9d5;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.teacher .cirle-three div {
+    background-color: #fbc9d5;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.teacher .badge:hover .cirle-three {
+    border: 1px solid #ea512e;
+}
+
+.teacher .badge:hover .cirle-three div {
+    background-color: #ea512e;
+    color: white;
+}
+
+.badge h4 {
+    font-size: 20px;
+}
+
+.badge p {
+    color: #6b6b84;
+    line-height: 1.6;
+    margin-top: 15px;
+
+}
+
+.badge-conatiner {
+    display: flex;
+    flex-direction: column;
+    
+}
+.value-1{
+    position: absolute;
+    top: 0;
+    left: o;
+}
+.value-2{
+    position: absolute;
+    bottom: 0;
+    left: o;
+}
+.value-3{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* ? teacher-section-end-here */
+
 /* ? animation-start-here */
 
 @keyframes move {
@@ -597,8 +752,8 @@ nav div button {
     }
 
     .child-section .single-child {
-        width: 380px;
-        height: 380px;
+        width: 365px;
+        height: 365px;
         border-radius: 50%;
         margin-top: 50px;
         text-align: center;
@@ -657,7 +812,7 @@ nav div button {
     }
 
     .Popular-Classes {
-        padding: 40px 4%;
+        padding: 0;
         margin-top: 60px;
     }
 
@@ -668,6 +823,24 @@ nav div button {
     .Popular-Classes h1 {
         font-size: 30px;
     }
+.teacher {
+    padding: 0 4%;
+    flex-direction: column;
+}
+.teacher .teacher-pic img{
+width: 100%;
+}
+  
+.teacher .tittle {
+    font-size: 28px;
+    margin-top: 20px;
+}
+    .badge p {
+   font-size: 15px;
+}
+.value-1,.value-2,.value-3{
+    display: none;
+}
 }
 
 
