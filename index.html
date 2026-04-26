@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/index.css">
 </head>
 
@@ -321,9 +322,104 @@
         </section>
         <!-- ? meet-teacher-section-start-here -->
 
-    </div>
+        <!-- ? slider-section-start-here -->
+        <section class="feedback">
+            <p class="core">Testimonials</p>
+            <h3 class="tittle">What Parents Say About Us</h3>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="circle-box swiper-slide">
+                        <div class="circle">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                                viverra maecenas accumsan lacus vel facilisis.</p>
+                            <h3>Priestly Herbart</h3>
+                            <h4>Math Teacher</h4>
+                        </div>
+                        <img src="/images/testimonials-1.png" alt="">
+                    </div>
+                    <div class="circle-box swiper-slide">
+                        <div class="circle">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                                viverra maecenas accumsan lacus vel facilisis.</p>
+                            <h3>Sherlock Bin</h3>
+                            <h4>Math Teacher</h4>
+                        </div>
+                        <img src="/images/testimonials-1.png" alt="">
+                    </div>
+                    <div class="circle-box swiper-slide">
+                        <div class="circle">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                                viverra maecenas accumsan lacus vel facilisis.</p>
+                            <h3>Glims Bond</h3>
+                            <h4>Math Teacher</h4>
+                        </div>
+                        <img src="/images/testimonials-1.png" alt="">
+                    </div>
+                    <div class="circle-box swiper-slide">
+                        <div class="circle">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                                viverra maecenas accumsan lacus vel facilisis.</p>
+                            <h3>Sherlock Bin</h3>
+                            <h4>Math Teacher</h4>
+                        </div>
+                        <img src="/images/testimonials-1.png" alt="">
+                    </div>
+                    <div class="circle-box swiper-slide">
+                        <div class="circle">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                                viverra maecenas accumsan lacus vel facilisis.</p>
+                            <h3>Priestly Herbart</h3>
+                            <h4>Math Teacher</h4>
+                        </div>
+                        <img src="/images/testimonials-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <!-- ? slider-section-end-here -->
 
 
+
+        <!--? Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+        <!--?Initialize Swiper -->
+        <script>
+
+
+            const swiper = new Swiper('.swiper', {
+                // --- आपका मौजूदा डेस्कटॉप डिजाइन (Base Settings) ---
+                slidesPerView: 3, // जो आपने पहले से 3 सेट किया है
+                spaceBetween: 30,
+                loop: true,
+
+                // --- मोबाइल और टैबलेट के लिए रिस्पॉन्सिव सेटिंग्स ---
+                breakpoints: {
+                    // जब स्क्रीन 320px से बड़ी हो (Mobile Phone)
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    // जब स्क्रीन 768px से बड़ी हो (Tablet)
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    // जब स्क्रीन 1024px से बड़ी हो (Desktop)
+                    1024: {
+                        slidesPerView: 3, // यहाँ आपका ओरिजिनल डिजाइन काम करेगा
+                        spaceBetween: 30,
+                    },
+                },
+            });
+
+        </script>
 </body>
 
 </html>
