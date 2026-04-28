@@ -748,6 +748,71 @@ nav div button {
 /* ? slider-section-end-here */
 
 
+/*? upcoming-events-section-start-here  */
+
+.upcoming-events {
+    /* height: 500px; */
+    background: url(/images/event-bg.jpg);
+    background-size: cover;
+    padding: 80px 8%;
+}
+
+.upcoming-events p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    font-family: "Sacramento", cursive;
+}
+
+.upcoming-events h2 {
+    text-align: center;
+    font-size: 45px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    color: white;
+}
+
+.upcoming-events .card-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.upcoming-events .card {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+
+}
+
+.upcoming-events .card .content h3 {
+    font-size: 24px;
+    color: #1B0238;
+}
+
+.upcoming-events .card .content p {
+    font-size: 16px;
+    color: #1B0238;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.upcoming-events .card .celender h1 {
+    font-size: 60px;
+    color: #ea512e;
+}
+.upcoming-events .card .celender p {
+    font-size: 20px;
+    color: #ea512e;
+}
+
+/*? upcoming-events-section-end-here   */
+
 /* ? animation-start-here */
 
 @keyframes slide {
@@ -1040,7 +1105,13 @@ nav div button {
     .team .container .social {
         display: none;
     }
+.upcoming-events {
+    padding: 0;
+}
 
+.upcoming-events .card{
+    flex-direction: column;
+}
 }
 
 
