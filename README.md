@@ -3,7 +3,7 @@
 A simple, responsive website built using pure **HTML5** and **CSS3**.
 
 ## 🚀 Live Demo
-[coming soon]
+[https://tiny-yeot-a6f812.netlify.app/]
 
 ## ✨ Features
 - Fully Responsive Layout.
